@@ -1,0 +1,376 @@
+
+
+
+/* FONTS /////////////////////////////////////////////// */
+
+/* app font */
+@font-face {
+    font-family: JBold;
+    src: url(../fonts/JohnstonITCStd-Bold.otf);
+}
+
+@font-face {
+    font-family: JMedium;
+    src: url(../fonts/JohnstonITCStd-Light.otf);
+}
+
+@font-face {
+    font-family: JBoldi;
+    src: url(../fonts/JohnstonITCStd-BoldItalic.otf);
+}
+
+@font-face {
+    font-family: JLight;
+    src: url(../fonts/JohnstonITCStd-Light.otf);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    color:  #12576e;
+}
+
+html, body {
+    /* stop page from scrolling */
+    height: 100%;
+    overflow: hidden;
+}
+
+div, main, section, img {
+    position: absolute;
+}
+P{
+    line-height: 30PX;
+}
+#loading, main{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loading img {
+    width: 50px;
+    height: auto;
+}
+
+main {
+    width: 960px;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.next:hover, .prev:hover {
+    cursor: pointer;
+}
+
+/* GENERAL STYLES - MAY BE EDITED */
+.next, .prev {
+    bottom: 15px;
+    padding: 5px 20px;
+    color: #144b60;
+    border: 2px solid #144b60;
+    border-radius: 10px;
+    line-height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.5s;
+    
+}
+
+.next {
+    right: 20px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next:hover, .prev:hover {
+    color: #000;
+    background: rgba(255, 255, 255, 1);
+}
+
+
+#screen1
+{
+    background-image: url("../img/SVG/langingBG.svg")
+}
+#screen2,#screen3,#screen4,#screen5,#screen6,#screen7
+{
+    background-image: url("../img/SVG/remainingBg.svg")
+}
+
+
+
+
+.heading
+{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 5%;
+    width: 90%;
+    border-radius: 50px;
+    background-color: #6cc2b4;
+    border-bottom: 3px solid #0e5874;
+}
+/*  Screen 1  */
+
+#screen1 h1{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+
+    font-size: 70px;
+}
+#screen1HeadLight
+{
+    font-size: 35px;
+    font-family: JLight;
+
+}
+#globe1
+{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    width: 150px;
+    
+}
+#globe2
+{
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    width: 150px;
+    
+}
+#globe3
+{
+    position: absolute;
+    top: 250px;
+    left: 550px;
+    width: 250px;
+}
+/*  Screen 2  */
+#intro
+{
+    width: 90%;
+    margin: 30px 5% 10px 5% ;
+    font-family: JLight;
+    font-size: 30px;
+    padding: 30px 30px 150px 30px;
+    background-color: #aaceb2;
+
+}
+#screen2Globe
+{
+    width: 100px;
+    margin:20px  calc(45% - 50px);
+
+}
+
+#screen2Globe:hover
+{
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg); 
+    transition-duration: 1s;
+}
+#screen2Buttons
+{
+    position: absolute;
+    bottom: -40px;
+    width: 95%;
+    margin: 10% 5%
+}
+.screen2Buttons
+{
+    position: relative;
+    float: left;
+    width: 20%;
+    padding: 20px;
+    margin-right: 5%;
+    border-radius: 20px;
+    background-color: #0e5874;
+    color: #aaceb2;
+    text-align: center
+}
+/*  Screen 3  */
+#screen3Left
+{
+    float:left;
+    position: relative;
+    margin: 5% 0px 5% 5%;
+    width: 52.5%;
+    min-height: 20px;
+    height: 400px;
+    background-image: url("../img/SVG/screen3globe.svg");
+    background-repeat: no-repeat; 
+}
+.screen3Desc
+{
+    padding: 13px 10px;
+    vertical-align: middle;
+    background-color: #6cc2b4;
+    border: 1px solid #5eafa0;
+}
+#screen3Right
+{
+    position: relative;
+    margin: 5% 5% 5% 0px;
+    width: 32.5%;
+    float: right;
+    height: 400px;
+}
+/*  Screen 4  */
+#screen4Left
+{
+    float:left;
+    position: relative;
+    margin: 5% 0px 5% 5%;
+    padding-top: 50px;
+    width: 52.5%;
+    min-height: 20px;
+    height: 400px;
+    background-repeat: no-repeat; 
+}
+.screen4Desc
+{
+    padding: 13px 10px;
+    vertical-align: middle;
+    background-color: #6cc2b4;
+    border: 1px solid #5eafa0;
+    margin: 10px
+}
+#screen4Right
+{
+    position: relative;
+    margin: 5% 5% 5% 0px;
+    width: 29%;
+    float: right;
+    height: 400px;
+}
+#screen4Globe
+{
+    position: absolute;
+    left: 200px;
+    width :290px;
+    float:right;
+}
+#screen4Right h1{
+    margin-top: 120px;
+    width: 100%;
+    min-height: 100px;
+    padding: 15px;
+    vertical-align: middle;
+    background-color: #6cc2b4;
+}
+
+/*  Screen 5  */
+#screen5Globe
+{
+    height: 100px;
+    width: 90%;
+}
+#screen5Globe img
+{
+    width: 400px;
+    margin-top: 50px;
+    margin-left: calc(55% - 200px)
+}
+#screen5desc
+{
+    margin: 200px 0px 0px 5%;
+    width: 90%;
+    height: 250px;
+    background-color:#6cc2b4
+}
+#s5DescLeft
+{
+    float: left;
+    width: 100%;
+    height: 250px;
+}
+#s5DescRight
+{
+    margin-left: 100%;
+    float: right;
+    width: 50%;
+    height: 250px;
+}
+#s5DescLeft h2
+{
+    height: 30px;
+    vertical-align: middle;
+    padding: 30px 0px;
+    line-height: 30px;
+    text-align: center;
+
+}
+#s5DescRight h2
+{   padding: 10%;
+    text-align: center
+
+}
+/*  Screen 6  */
+
+#screen6top
+{
+    width: 90%;
+
+    margin-top: 50px;
+    margin-left: 5%;
+}
+#screen6topLeft
+{
+    padding: 20px;
+    width: 49%;
+    text-align: center;
+    background-color: #aaceb2
+
+}
+#screen6topRight
+{
+    padding: 20px;
+    margin-left: 51%;
+    float: right;
+    width: 49%;
+    text-align: center;
+    background-color: #aaceb2
+    
+}
+#screen6bottom
+{
+    padding: 50px 10%;
+    width: 90%;
+    margin: 200px 0px 0px 5% ;
+    background-color: #aaceb2
+}
+
+/*  Screen 6  */
+#screen7list
+{
+    margin-left: 5%;
+    padding: 10%;
+    width: 90%;
+    background-color: #6cc2b4;
+
+}
+#screen7list li
+{
+    margin-bottom: 15px
+}
+audio
+{
+    display: none;
+}
